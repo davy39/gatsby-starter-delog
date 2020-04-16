@@ -24,7 +24,7 @@ const IndexPage = ({
         {!site.siteMetadata.w3l_dom_key ? null : <meta name="w3l-domain-verification" content={site.siteMetadata.w3l_dom_key} />}
       </Helmet>
       <HeroHeader/>
-      <h2>Billet de Blog &darr;</h2>
+      <h2>Billets de Blog &darr;</h2>
       <div className="grids">
         {Posts}
       </div>
