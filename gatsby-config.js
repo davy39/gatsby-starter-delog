@@ -7,15 +7,15 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Davy`,
-    description: `Un blog sur les logiciels libres.`,
-    siteUrl: `https://trusting-ramanujan-eba443.netlify.app/`,
+    title: `Davy.ConFig`,
+    description: `Un blog de plus sur les logiciels libres.`,
+    siteUrl: `https://davy.cf/`,
     home: {
       title: `Bienvenue sur le blog de Davy`,
-      description: `Vous trouverez ici quelques notes d'installation et d'utilisation des différents logiciels libres que je teste.`,
+      description: `Vous trouverez ici mes notes d'installation et d'utilisation des logiciels libres que je rencontre.`,
     },
     /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
-    w3l_dom_key: `5e609f7a2d23fCF_Domain_verify` 
+    w3l_dom_key: `5e609f7a2d23fCF_Domain_verify`
   },
   plugins: [
     {
@@ -51,7 +51,7 @@ module.exports = {
         head: true,
       }
     },
-    `gatsby-plugin-sass`, 
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
   ],
