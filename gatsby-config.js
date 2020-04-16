@@ -15,7 +15,7 @@ module.exports = {
       description: `Vous trouverez ici mes notes d'installation et d'utilisation des logiciels libres que je rencontre.`,
     },
     /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
-    w3l_dom_key: `5e98c423b47bdCF`
+    w3l_dom_key: `5e98c423b47bdCF_Domain_verify`
   },
   plugins: [
     {
