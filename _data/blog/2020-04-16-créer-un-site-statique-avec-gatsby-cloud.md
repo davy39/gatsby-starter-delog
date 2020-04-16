@@ -1,6 +1,6 @@
 ---
 template: BlogPost
-path: gatsbycloud
+path: /gatsbycloud
 date: 2020-04-16T18:43:50.469Z
 title: Créer un site statique avec Gatsby Cloud
 ---
