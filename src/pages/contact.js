@@ -22,7 +22,7 @@ const ContactPage = ({
         <div>
           <form className="form-container" action="https://sendmail.w3layouts.com/SubmitContactForm" method="post">
             <div>
-              <label htmlFor="w3lName">Name</label>
+              <label htmlFor="w3lName">Nom</label>
               <input type="text" name="w3lName" id="w3lName"/>
             </div>
             <div>
@@ -30,7 +30,7 @@ const ContactPage = ({
               <input type="email" name="w3lSender" id="w3lSender"/>
             </div>
             <div>
-              <label htmlFor="w3lSubject">Subject</label>
+              <label htmlFor="w3lSubject">Objet</label>
               <input type="text" name="w3lSubject" id="w3lSubject"/>
             </div>
             <div>
