@@ -16,8 +16,8 @@ const ContactPage = ({
       </Helmet>
       <div className="two-grids -contact">
         <div className="post-thumbnail" style={{backgroundImage: `url('/assets/alexander-andrews-HgUDpaGPTEA-unsplash.jpg')`, marginBottom: 0}}>
-          <h1 className="post-title">Get in Touch</h1>
-          <p>Let me help you kick start your next project &rarr;</p>
+          <h1 className="post-title">Me contacter</h1>
+          <p>N hésitez pas à me transmettre vos remarques, suggestions ou questions &rarr;</p>
         </div>
         <div>
           <form className="form-container" action="https://sendmail.w3layouts.com/SubmitContactForm" method="post">
