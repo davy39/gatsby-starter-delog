@@ -16,7 +16,7 @@ export default function Template({
       </Helmet>
       <div className="blog-post-container">
         <article className="post">
-          
+
           {!frontmatter.thumbnail && (
             <div className="post-thumbnail">
               <h1 className="post-title">{frontmatter.title}</h1>
@@ -44,7 +44,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMMM YYYY", locale: "fr")
         path
         title
         thumbnail
