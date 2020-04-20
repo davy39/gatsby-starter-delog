@@ -5,7 +5,7 @@ date: 2020-04-20T09:59:16.665Z
 title: Accéder à Github par SSH
 thumbnail: /assets/copy-clone-url.png
 ---
-Si l'on souhaite utiliser **Github** comme gestionnaire de révision, pour télécharger des dépots (clone), les développer localement, puis soummetre des modifications (commit) et les renvoyer sur Github (push)... Il peut être pratique de ne pas avoir à indiquer ses identifiants et mot de passe à chaque opération.
+Si l'on souhaite utiliser **Github** comme gestionnaire de révision, pour télécharger des dépots (clone), les développer localement, puis soumettre des modifications (commit) et les renvoyer sur Github (push)... Il peut être pratique de ne pas avoir à indiquer ses identifiants et mot de passe à chaque opération.
 
 Pour cela, il est possible de se connecter à Github de manière sécurisée via le protocole **SSH**
 
@@ -24,7 +24,7 @@ Pour cela, il est possible de se connecter à Github de manière sécurisée via
 
 * Enfin, configurer **git** pour qu'il se connecte par défaut avec votre identifiant Github.
 
-```
+```shell
 git config --global user.email "mon_email@example.com"
 git config --global user.name "mon_identifiant_github"
 ```
