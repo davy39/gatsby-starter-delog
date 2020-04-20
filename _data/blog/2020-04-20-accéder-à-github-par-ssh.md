@@ -24,6 +24,7 @@ Pour cela, il est possible de se connecter à Github de manière sécurisée via
 
 * Enfin, configurer **git** pour qu'il se connecte par défaut avec votre identifiant Github.
 
-`git config --global user.email "mon_email@example.com"` 
-
-`git config --global user.name "mon_identifiant_github"`
+```
+git config --global user.email "mon_email@example.com"
+git config --global user.name "mon_identifiant_github"
+```
