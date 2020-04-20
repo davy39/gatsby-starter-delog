@@ -4,6 +4,7 @@ path: /github-ssh
 date: 2020-04-20T09:59:16.665Z
 title: Accéder à Github par SSH
 thumbnail: /assets/copy-clone-url.png
+metaDescription: Test
 ---
 Si l'on souhaite utiliser **Github** comme gestionnaire de révision, pour télécharger des dépots (clone), les développer localement, puis soumettre des modifications (commit) et les renvoyer sur Github (push)... Il peut être pratique de ne pas avoir à indiquer ses identifiants et mot de passe à chaque opération.
 
