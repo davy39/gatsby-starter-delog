@@ -5,7 +5,7 @@ date: 2020-05-23T15:43:24.295Z
 title: Modifier le firmware du BCD2000
 thumbnail: /assets/BCD2000_big.jpg
 ---
-Le BCD2000 est une table de mixage pour DJ qui commence à dater un peu (2006) mais peu donc être achetée pour pas bien cher d'occasion (j'en ai acheté une à 10€ et l'autre à 20€) et a l'air assez robuste.
+Le BCD2000 est une table de mixage pour DJ qui commence à dater un peu (2006) mais peu donc être achetée pour pas bien cher d'occasion (j'en ai acheté une à 10€ et l'autre à 20€), a l'air assez robuste et s'adapte facilement pour controler Mixxx (j'ai apporté [quelques modifs au script et fichier xml](https://github.com/davy39/mixxx-bcd2000) de Mixxx pour un meilleur support).
 
 Cependant, ses drivers pour Windows ne supportent que les systèmes 32bits et donc pas les plus récents, et le noyau Linux ne prend en charge que les signaux midi et pas la partie audio.
 
