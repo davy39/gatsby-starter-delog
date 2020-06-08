@@ -15,7 +15,9 @@ Matériel :
 
 Installation de l'interface audio : <https://forum.armbian.com/topic/759-i2s-on-orange-pi-h3/>
 
-logiciel : <http://andrewdotni.ch/blog/2015/02/28/midi-synth-with-raspberry-p/>
+Logiciel : <http://andrewdotni.ch/blog/2015/02/28/midi-synth-with-raspberry-p/>
+
+Kernel RT : <http://arre234.blogspot.com/2018/02/linux-portable-wifi-guitar-amp-on.html>
 
 Un peu de son :
 
