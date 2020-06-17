@@ -17,3 +17,7 @@ tar -xvzf LCD_show_v6_1_3.tar.gz
 cd LCD_show_v6_1_3
 ./LCD35_v
 ```
+
+Pour une autre version :
+
+https://iwannabe1337.wordpress.com/2016/03/26/rpi-set-raspberry-pi-lcd-3-5-inch-rpi-lcd-v3-0/
