@@ -16,3 +16,11 @@ J'ai trouvé une option plus prometteuse : la possibilité de[ modifier le firma
 Je fais donc l'essai dès que je reçois ce qu'il me faut, et explique la démarche ici si j'y arrive.
 
 A suivre !
+
+Initialement la table de mixage acquiert le son à partir de l'entrée analogique. Pour pouvoir enregistrer le microphone, il faut lui envoyer un signal midi, par exemple à partir d'une ligne de commande :
+
+`amidi -p hw:2,0,0 -S C1 01`
+
+Ou pour revenir à l'entrée analogique :
+
+`amidi -p hw:2,0,0 -S C1 00`
