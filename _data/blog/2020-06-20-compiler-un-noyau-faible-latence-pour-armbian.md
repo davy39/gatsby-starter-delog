@@ -40,8 +40,8 @@ Télécharger le [dernier patch 5.4](http://cdn.kernel.org/pub/linux/kernel/proj
 Il faut modifier la branche du noyeau compiler pour l'adapter à la version du patch RT téléchargée, dans les [options](https://github.com/armbian/build/blob/master/lib/configuration.sh) du fichier lib.config
 
 ```
-mkdir ~/build-OPZynth/userpatches
-nano ~/build-OPZynth/userpatches/lib.config
+mkdir ~/build/userpatches
+nano ~/build/userpatches/lib.config
 ```
 
 Comme par exemple :
@@ -53,7 +53,7 @@ KERNELBRANCH="tag:v5.4.47"
 Remarque : On pourrait aussi enregistrer le fichier de configuration du Kernel une fois configuré.
 
 ```
-nano ~/build-OPZynth/userpatches/linux-$KERNELFAMILY-$KERNELBRANCH.config
+nano ~/build/userpatches/linux-$KERNELFAMILY-$KERNELBRANCH.config
 ```
 
 ### Compilation du kernel
