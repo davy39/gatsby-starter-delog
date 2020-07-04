@@ -5,8 +5,6 @@ date: 2020-06-20T09:40:48.913Z
 title: Compiler un noyau faible latence pour Armbian
 thumbnail: /assets/RealTimeLinux.jpg
 ---
-
-
 ## Téléchargement des outils de compilation d'Armbian
 
 ```
@@ -21,7 +19,7 @@ Télécharger le [dernier patch 5.4](http://cdn.kernel.org/pub/linux/kernel/proj
 
 Remarque : ce sera dans /home/davy/build-OPZynth/patch/kernel/rockchip64 pour l'OP4
 
-## Modification éventuelle des option de compilation 
+## Modification éventuelle des option de compilation
 
 Éventuellement, on pourrait modifier des [options](https://github.com/armbian/build/blob/master/lib/configuration.sh) dans le fichier lib.config
 
@@ -36,6 +34,7 @@ Comme par exemple :
 [[ $LINUXFAMILY == sunxi && $BRANCH == dev ]] && 
 KERNELBRANCH="tag:v5.4.44"
 ```
+
 Attention, cela ne marchera pas dans notre cas précis car ce tag n'existe pas pour le dépot sunxi-current / megous
 
 Remarque : On pourrait aussi enregistrer le fichier de configuration du Kernel une fois configuré.
@@ -51,3 +50,7 @@ nano ~/build-OPZynth/userpatches/linux-$KERNELFAMILY-$KERNELBRANCH.config
 ```
 
 Il faut ensuite choisir le low latency (3) car la compilation du Full RT ne marche pas.
+
+
+
+Les sources du mainline (OP4?) sont ici : https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
