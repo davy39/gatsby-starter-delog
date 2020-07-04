@@ -1,8 +1,8 @@
 ---
 template: BlogPost
-path: /OPLowLatency
+path: /ArmbianRealTime
 date: 2020-06-20T09:40:48.913Z
-title: Compiler un noyau faible latence pour Armbian
+title: Compiler un noyau realtime (RT) pour Armbian
 thumbnail: /assets/RealTimeLinux.jpg
 ---
 ## Téléchargement des outils de compilation d'Armbian
@@ -22,19 +22,16 @@ Télécharger le[ dernier patch 5.4](http://cdn.kernel.org/pub/linux/kernel/proj
 Effacer les patchs au delà de la version RT téléchargée.
 
 ### Compilation du kernel
-﻿
+
 ```
 ./compile.sh  BOARD=orangepione BRANCH=current KERNEL_ONLY=yes KERNEL_CONFIGURE=yes
 ```
-﻿
+
 Il faut ensuite choisir le low latency (3) car la compilation du Full RT ne marche pas.
-
-
 
 ## Compilation pour OrangePi4
 
 Les sources du mainline (OP4?) sont [ici](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git).
-
 
 Télécharger le [dernier patch 5.4](http://cdn.kernel.org/pub/linux/kernel/projects/rt/5.4/) et le décompresser dans le dossier ~/build/patch/kernel/rockchip64 pour l'OP4
 
@@ -65,4 +62,4 @@ nano ~/build-OPZynth/userpatches/linux-$KERNELFAMILY-$KERNELBRANCH.config
 ./compile.sh  BOARD=orangepione BRANCH=current KERNEL_ONLY=yes KERNEL_CONFIGURE=yes
 ```
 
-Il faut ensuite choisir le low latency (3) car la compilation du Full RT ne marche pas.
+Il faut ensuite choisir Full Preempt RT et [désactiver AUFS et NFS sinon la compilation n'aboutit pas.](https://forum.armbian.com/topic/13250-preempt-rt-patch-for-allwinner-h5/)
