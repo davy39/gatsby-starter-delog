@@ -59,7 +59,7 @@ nano ~/build-OPZynth/userpatches/linux-$KERNELFAMILY-$KERNELBRANCH.config
 ### Compilation du kernel
 
 ```
-./compile.sh  BOARD=orangepione BRANCH=current KERNEL_ONLY=yes KERNEL_CONFIGURE=yes
+./compile.sh  BOARD=orangepione BRANCH=current KERNEL_ONLY=yes KERNEL_CONFIGURE=yes AUFS=no
 ```
 
 Il faut ensuite choisir Full Preempt RT et [désactiver AUFS et NFS sinon la compilation n'aboutit pas.](https://forum.armbian.com/topic/13250-preempt-rt-patch-for-allwinner-h5/)
