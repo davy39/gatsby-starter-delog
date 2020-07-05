@@ -21,3 +21,7 @@ cd LCD_show_v6_1_3
 Pour une autre version :
 
 https://iwannabe1337.wordpress.com/2016/03/26/rpi-set-raspberry-pi-lcd-3-5-inch-rpi-lcd-v3-0/
+
+Avec un autre modèle pour lequel le touchscreen x est inversé:
+
+https://hackaday.io/project/166752-quick-and-dirty-zynthian/details
