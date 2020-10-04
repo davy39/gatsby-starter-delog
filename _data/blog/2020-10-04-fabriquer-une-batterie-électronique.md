@@ -11,7 +11,7 @@ Un arduino, quelques résistances, des capteurs piezzo, du matos de récup... et
 
 ## Electronique
 
-Un japonais à bossé sur une librairie pour connecter ses pads de batterie électronique sur un arduino (par exemple un UNO avec un shield LCD) ou un ESP32 (qui peut émettre un signal Bluetooth) pour transformer les signaux en message MIDI.
+Ryo Kosaka à bossé sur une librairie pour connecter ses pads de batterie électronique sur un arduino (par exemple un UNO avec un shield LCD) ou un ESP32 (qui peut émettre un signal Bluetooth) pour transformer les signaux en message MIDI.
 
 Différents exemples de codes et de connections sont [disponibles sur son dépot Github](https://github.com/RyoKosaka/HelloDrum-arduino-Library). 
 
