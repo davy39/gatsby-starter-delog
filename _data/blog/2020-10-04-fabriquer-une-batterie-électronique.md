@@ -21,7 +21,7 @@ Un bon moyen de tester sa nouvelle batterie électronique sur son PC est le logi
 
 Mais avant de le lancer, il faut transformer les messages reçu par USB en signaux MIDI. Cela se fait sous linux grace au logiciel **ttymidi**.
 
-* Pour l'installer, il faut le compiler car il n'est pas présent dans les dépôts de logiels...
+* Pour l'installer, il faut le compiler car il n'est pas présent dans les dépôts de logiciels...
 
 ```
 sudo apt install git buid-essentials libasound2-dev
@@ -31,12 +31,17 @@ make
 sudo make install
 ```
 
-* Pour le lancer, admettons que votre "batterie" est connectée sur /dev/ttyUSB0.
+* Il faut aussi que votre utilisateur est les droits d'accès aux ports série et usb (comme pour arduino).
+
+`sudo adduser $USER dialout`
+
+* Enfin, pour le lancer, admettons que votre "batterie" est connectée sur /dev/ttyUSB0.
 
 `ttymidi -s /dev/ttyUSB0 -b 38400`
 
+* Vous pouvez ensuite lancer Hydrogen après l'avoir installé :
+`sudo apt install hydrogen-drumkits`
+
 ## Matériel de récup
 
-Plein d'exemples sont disponibles en ligne, cherche "DIY electronic drum".
-
-https://www.youtube.com/watch?v=Eu6CRB6HjAg
+Plein d'exemples sont disponibles[ en ligne](https://www.youtube.com/watch?v=Eu6CRB6HjAg), rechercher "DIY electronic drum".
