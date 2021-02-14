@@ -86,6 +86,6 @@ while True:
     with open("/sd/test.txt", "a") as f:
         #On y écrit nos paramètres, séparés d'un espace, et formatés avec plus ou moins de décimales
         f.write("%0.1f %d %0.1f %0.3f %0.2f\r\n" % result)
-    #on attend 2 secondes avant de recommancer une mesure.
+    #on attend 2 secondes avant de recommencer une mesure.
     time.sleep(2)
 ```
