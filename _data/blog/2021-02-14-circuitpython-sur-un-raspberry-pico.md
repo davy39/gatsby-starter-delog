@@ -20,7 +20,7 @@ Comme d'habitude, on peut [télécharger le bundle de librairies Adafruit](https
 Pour installer mu-editor : 
 
 ```bash
-sudo apt- install python3-pip
+sudo apt-get install python3-pip
 pip3 install mu-editor
 ```
 
