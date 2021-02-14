@@ -26,7 +26,9 @@ pip3 install mu-editor
 
 Ou pour installer la version en développement de mu-editor :
 
-`pip3 install git+https://github.com/mu-editor/mu.git`
+```bash
+pip3 install git+https://github.com/mu-editor/mu.git
+```
 
 Une fois Circuitpython Mu-editor reconnait le Pico comme un périphérique Adafruit CircuitPlayground. 
 
@@ -36,7 +38,7 @@ Si vous êtes un afficionado de l'éditeur Atom, il existe un le package **langu
 
 Pour installer Atom sur un OS dérivé de Debian (Ubuntu, Mint...) :
 
-```
+```bash
 wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
 sudo sh -c 'echo "deb \[arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
 sudo apt-get update
