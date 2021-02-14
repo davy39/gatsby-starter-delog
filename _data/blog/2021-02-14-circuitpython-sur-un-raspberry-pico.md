@@ -5,7 +5,7 @@ date: 2021-02-14T17:37:26.459Z
 title: CircuitPython sur un Raspberry Pico
 thumbnail: /assets/2021-01-21-raspberry-pi-pico-pinout.png
 ---
-La compagnie Rasperry a sorti des nouveaux microprocesseurs du nom de [Raspberry Pico](https://www.raspberrypi.org/products/raspberry-pi-pico/). ils ont l'avantage d'être puissants pour le prix ([4€50](https://shop.mchobby.be/fr/pico-raspberry-pi/2025-pico-rp2040-microcontroleur-2-coeurs-raspberry-pi-3232100020252.html)), devraient bénéficier du support d'une très large communauté, et supportent le langage CircuitPython sur lequel on a déjà travaillé (sur SAMD21 et BlackPill).
+La compagnie **Raspberry** a sorti un nouveau microprocesseur au nom de [Raspberry Pico](https://www.raspberrypi.org/products/raspberry-pi-pico/). Il présente l'avantage d'être relativement performant et ce à un prix raisonnable ([4€50](https://shop.mchobby.be/fr/pico-raspberry-pi/2025-pico-rp2040-microcontroleur-2-coeurs-raspberry-pi-3232100020252.html)). Il devrait par ailleurs bénéficier du support d'une très large communauté et supporte le langage CircuitPython sur lequel on est habitué à travailler (sur SAMD21 et BlackPill).
 
 ## Installation de Circuitpython
 
@@ -13,7 +13,7 @@ Rien de plus simple, il suffit de télécharger[ la dernière version  de Circui
 
 ## Utilisation des librairies Adafruit
 
-Comme d'habitude, on peut [télécharger le bundle de librairies Adafruit](https://circuitpython.org/libraries), pour pouvoir ensuite copier les librairies nécessaire dans le dossier lib du Pico. Attention : s'assurer que le bundle correspond bien à la version de Circuitpython installée précédemment sur le Pico (la v6 lors de la rédaction de cet article).
+Comme d'habitude, on peut [télécharger le bundle de librairies Adafruit](https://circuitpython.org/libraries), pour pouvoir ensuite copier les librairies nécessaire dans le dossier `lib` du Pico. Attention : s'assurer que le bundle correspond bien à la version de Circuitpython installée précédemment sur le Pico (la v6 lors de la rédaction de cet article).
 
 ## Programmation avec Mu-editor
 
@@ -26,7 +26,9 @@ pip3 install mu-editor
 
 Ou pour installer la version en développement de mu-editor :
 
-`pip3 install git+https://github.com/mu-editor/mu.git`
+```bash
+pip3 install git+https://github.com/mu-editor/mu.git
+```
 
 Une fois Circuitpython Mu-editor reconnait le Pico comme un périphérique Adafruit CircuitPlayground. 
 
@@ -36,7 +38,7 @@ Si vous êtes un afficionado de l'éditeur Atom, il existe un le package **langu
 
 Pour installer Atom sur un OS dérivé de Debian (Ubuntu, Mint...) :
 
-```
+```bash
 wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
 sudo sh -c 'echo "deb \[arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
 sudo apt-get update
