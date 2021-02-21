@@ -11,7 +11,7 @@ module.exports = {
     description: `Un blog de plus sur les logiciels libres.`,
     siteUrl: `https://davy.cf/`,
     home: {
-      title: `Bienvenue mon blog !`,
+      title: `Bienvenue sur mon blog !`,
       description: `Quelques tribulation d'un intermittent du logiciel libre.`,
     },
     /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
