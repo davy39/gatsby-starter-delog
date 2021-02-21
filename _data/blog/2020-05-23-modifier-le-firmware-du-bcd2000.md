@@ -17,7 +17,7 @@ Il existe une solution bien plus élégante : reprogrammer [le firmware du contr
 
 Pour cela, il nous faut simplement un programmateur d'[EEPROM CH341](https://fr.aliexpress.com/item/4000851292510.html).
 
-Commencer par démonter le contrôleur après avoir enlevé les caches en plastique qui sont clipsés sur les côtés.
+Commencer par démonter le contrôleur après avoir enlevé les caches en plastique qui sont visés et clipsés sur les côtés, faire levier sur le clip avec un couteau pour éviter de le casser.
 
 ![](/assets/Clip.jpg "Faire levier pour déclipser le bord sans le casser.")
 
