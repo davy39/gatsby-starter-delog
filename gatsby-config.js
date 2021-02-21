@@ -12,7 +12,7 @@ module.exports = {
     siteUrl: `https://davy.cf/`,
     home: {
       title: `Bienvenue sur mon blog !`,
-      description: `Quelques tribulation d'un intermittent du logiciel libre.`,
+      description: `Tribulations d'un intermittent du logiciel libre.`,
     },
     /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
     w3l_dom_key: `5e98c423b47bdCF_Domain_verify`
