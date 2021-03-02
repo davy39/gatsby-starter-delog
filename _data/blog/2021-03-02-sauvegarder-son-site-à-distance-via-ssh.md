@@ -17,8 +17,6 @@ ssh admin@XX.XX.XXX.XXX "tar -C /var/lib/nethserver/vhost/ -zc wiki" > dossierWi
 
 Pour ne pas avoir à re-télécharger un dossier trop lourd à chaque fois, on peut aussi utiliser rsync pour ne télécharger que les nouveaux fichiers.
 
-rsync -avz -e ssh admin@80.14.184.183:/var/lib/nethserver/vhost/wiki/ /home/davy/Documents/Sauvegardes/wiki
-
 ```bash
 rsync -avz -e ssh REMOTE_USER@REMOTE_HOST:/var/lib/nethserver/vhost/wiki /backup/directory/on/backup/host
 ```
