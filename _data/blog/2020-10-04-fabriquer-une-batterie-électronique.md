@@ -13,7 +13,7 @@ Un arduino, quelques résistances, des capteurs piezzo, du matos de récup... et
 
 Ryo Kosaka à bossé sur une librairie pour connecter ses pads de batterie électronique sur un arduino (par exemple un UNO avec un shield LCD) ou un ESP32 (qui peut émettre un signal Bluetooth) pour transformer les signaux en message MIDI.
 
-Différents exemples de codes et de connections sont [disponibles sur son dépot Github](https://github.com/RyoKosaka/HelloDrum-arduino-Library). 
+Différents exemples de codes et de connections sont [disponibles sur son dépot Github](https://github.com/RyoKosaka/HelloDrum-arduino-Library).
 
 ## Logiciel
 
@@ -23,7 +23,7 @@ Mais avant de le lancer, il faut transformer les messages reçu par USB en signa
 
 * Pour l'installer, il faut le compiler car il n'est pas présent dans les dépôts de logiciels...
 
-```
+```bash
 sudo apt install git buid-essentials libasound2-dev
 git clone https://github.com/cjbarnes18/ttymidi
 cd ttymidi
