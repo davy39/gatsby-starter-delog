@@ -47,7 +47,7 @@ sudo apt-get install atom
 
 ## Exemple d'utilisation du Pico
 
-Un petit exemple pour afficher les mesures d'un BME680 sur un écran LCD, les envoyer sur le port série, et les enregistrer sur une carte SD.
+Un petit exemple pour afficher les mesures d'un BME680 sur un écran LCD, les envoyer sur le port série, et les enregistrer sur une carte SD. Comme d'hab avec CircuitPython, le code est à copier dans un fichier nommé `code.py` à la racine du pico.
 
 ```python
 # On déclare les librairies nécessaires
