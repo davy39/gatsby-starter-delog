@@ -3,7 +3,7 @@ template: BlogPost
 path: /pico
 date: 2021-02-14T17:37:26.459Z
 title: CircuitPython sur un Raspberry Pico
-thumbnail: /assets/2021-01-21-raspberry-pi-pico-pinout.png
+thumbnail: /assets/pico.jpg
 ---
 La fondation **Raspberry Pi** a sorti un nouveau microcontrôleur au nom de [Raspberry Pico](https://www.raspberrypi.org/products/raspberry-pi-pico/). Il présente l'avantage d'être relativement performant et ce à un prix raisonnable ([4€50](https://shop.mchobby.be/fr/pico-raspberry-pi/2025-pico-rp2040-microcontroleur-2-coeurs-raspberry-pi-3232100020252.html)). Il devrait par ailleurs bénéficier du support d'une très large communauté et supporte le langage CircuitPython sur lequel on s'est habitué à travailler (sur SAMD21 et [BlackPill](https://davy.cf/blackpill)).
 
