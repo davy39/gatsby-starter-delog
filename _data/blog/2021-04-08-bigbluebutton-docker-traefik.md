@@ -3,6 +3,7 @@ template: BlogPost
 path: /bbb
 date: 2021-04-08T16:42:06.468Z
 title: BigBlueButton + Docker + Traefik
+thumbnail: /assets/bbb.png
 ---
 [BigBlueButton](https://bigbluebutton.org/) est un logiciel libre de visioconférence. Son installation prévue sur Ubuntu 16.04 et pour la version de développement 2.3 sur Ubuntu 18.04.
 
