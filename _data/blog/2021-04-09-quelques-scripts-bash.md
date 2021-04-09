@@ -8,5 +8,5 @@ thumbnail: /assets/bash-logo.jpg
 Récupérer les liens hypertextes d'une page web :
 
 ```shell
-cat mon_fichier.html | grep -o '<a .*href=.*>' | sed -e 's/<a /\n<a /g' | sed -e 's/<a .*href=\['"'"'"]//' -e 's/\["'"'"'].*$//' -e '/^$/ d'
+cat mon_fichier.html | | grep -o '<a .*href=.*>' | sed -e 's/<a /\n<a /g' | sed -e 's/<a .*href=['"'"'"]//' -e 's/["'"'"'].*$//' -e '/^$/ d'
 ```
