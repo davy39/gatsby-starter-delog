@@ -32,7 +32,7 @@ nano .env
 ./scripts/generate-compose
 ```
 
-### Adaptation à Traefic 
+### Adaptation à Traefic
 
 Modifier le fichier docker-compose.yml
 
@@ -44,11 +44,11 @@ Et ajouter une partie labels :
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.bbb.entrypoints=http"
-      - "traefik.http.routers.bbb.rule=Host(bbb.euredomain.de)"     
+      - "traefik.http.routers.bbb.rule=Host(`bbb.euredomain.de`)"     
       - "traefik.http.middlewares.bbb-https-redirect.redirectscheme.scheme=https"
       - "traefik.http.routers.bbb.middlewares=bbb-https-redirect"
       - "traefik.http.routers.bbb-secure.entrypoints=https"
-      - "traefik.http.routers.bbb- secure.rule=Host(bbb.euredomain.de)"   
+      - "traefik.http.routers.bbb- secure.rule=Host(`bbb.euredomain.de`)"   
       - "traefik.http.routers.bbb-secure.tls=true"
       - "traefik.http.routers.bbb-secure.tls.certresolver=http"
       - "traefik.http.routers.bbb-secure.service=bbb"
@@ -66,17 +66,27 @@ Et à la toute fin du fichier :
     external: true
 ```
 
-
-
 Lancer le container BBB-Docker :
 
 `sudo docker-compose up -d`
 
+### Ajustements du parefeu
+
+Vérifier si des connexion sont empéchées par le parefeu :
+
+`sudo cat /var/log/syslog`
+
+> \[UFW BLOCK] IN=ens5 OUT= MAC= SRC=192.168.1.16 DST=224.1.1.1 LEN=32 TOS=0x00
+
+Ouvrir les droits concernés du parefeu :
+
+`sudo ufw allow  from 192.168.1.16 to 224.1.1.1`
+
+
+
 ### Création d'un compte admin
 
-`sudo docker-compose exec greenlight bundle exec rake admin:create`
-
-
+sudo docker-compose exec greenlight bundle exec rake user:create\["username","email","password","admin"]
 
 Un des rares liens qui m'a permis de trouver cette config (en allemand) : 
 
