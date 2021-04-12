@@ -230,21 +230,21 @@ services:
       - redis
     restart: "always"
     networks:
-      - 'traefik-proxy'
+      - 'web'
       - 'peertube'
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.peertube.entrypoints=http"
+      - "traefik.http.routers.peertube.entrypoints=web"
       - "traefik.http.routers.peertube.rule=Host(`url`)"
-      - "traefik.http.routers.peertube.middlewares=https-redirect@file"
-      - "traefik.http.routers.peertube-secure.middlewares=secured@file"
-      - "traefik.http.routers.peertube-secure.entrypoints=https"
+      #- "traefik.http.routers.peertube.middlewares=https-redirect@file"
+      #- "traefik.http.routers.peertube-secure.middlewares=secured@file"
+      - "traefik.http.routers.peertube-secure.entrypoints=websecure"
       - "traefik.http.routers.peertube-secure.rule=Host(`url`)"
       - "traefik.http.routers.peertube-secure.tls=true"
-      - "traefik.http.routers.peertube-secure.tls.certresolver=http"
+      - "traefik.http.routers.peertube-secure.tls.certresolver=default"
       - "traefik.http.routers.peertube-secure.service=peertube"
       - "traefik.http.services.peertube.loadbalancer.server.port=9000"
-      - "traefik.docker.network=traefik-proxy"
+      - "traefik.docker.network=web"
 
   postgres:
     image: postgres
@@ -271,9 +271,9 @@ services:
       traefik.enable: "false"
 
 networks:
-  traefik-proxy:
+  web:
     external:
-      name: traefik-proxy
+      name: web
   peertube:
 
 volumes:
@@ -282,12 +282,12 @@ volumes:
   redis: {}
 ```
 
-
-
 `cd peertube`
 
 `sudo docker-compose up -d`
 
+Pour définir le mot de passe de l'admin (root) :
 
+`sudo docker exec -it peertube_peertube_1 /bin/bash NODE_CONFIG_DIR=/config NODE_ENV=production npm run reset-password -- -u root`
 
 https://www.aukfood.fr/peertube-dockerise-avec-traefik-2/
