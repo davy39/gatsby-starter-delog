@@ -70,7 +70,7 @@ Lancer le container BBB-Docker :
 
 `sudo docker-compose up -d`
 
-### Ajustements du parefeu
+### Ajustements du pare-feu
 
 Vérifier si des connexion sont empéchées par le parefeu :
 
