@@ -25,7 +25,7 @@ dd if=mon-image-volumio.img of=/dev/sdb bs=1MB
 
 Volumio peut ensuite finir d'être configurée en lign eaprès l'avoir démarrer, se connecter simplement sur adresse IP. On peut par exemple y configuer le wifi, ou encore activer le réglage du volume logiciel.
 
-## Installation de Deemix-pyweb 
+## Installation de Deemix-pyweb
 
 Maintenant qu'on peut lire de la musique de bonne qualité, on peut vouloir en télécharger.
 
@@ -41,7 +41,7 @@ ssh volumio@mon.adresse.ip.locale
 
 Le mot de passe est volumio.
 
-### Installtion de deemix-pyweb
+### Installation du serveur web Deemix
 
 ```
 sudo apt install python3-pip git
@@ -50,9 +50,11 @@ git clone https://gitlab.com/RemixDev/deemix-gui-pyweb
 cd deemix-gui-pyweb
 git submodule update --init --recursive
 sudo pip3 install -U -r server-requirements.txt
-# Pour lancer le serveursudo 
-python3 server.py --host 0.0.0.0 --portable
+# Pour lancer le serveur 
+python3 server.py --host 0.0.0.0 --portable --serverwide-arl
 ```
+
+
 
 Pour créer un service qui se lance automatiquement au démarrage :
 
@@ -63,7 +65,7 @@ Description=deemix
 
 [Service]
 Type=fork
-ExecStart=/usr/bin/python3 /home/volumio/deemix-gui-pyweb/server.py --host 0.0.0.0 --portable
+ExecStart=/usr/bin/python3 /home/volumio/deemix-gui-pyweb/server.py --host 0.0.0.0 --portable --serverwide-arl
 
 [Install]
 WantedBy=multi-user.target
@@ -71,11 +73,14 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl enable deemix.service
 sudo systemctl start deemix.service
-
 ```
 
-L'interface web est alors accessible à l'adresse : hhtp://mon.ip.locale.de.volumio:6595
 
-Il y a un bug avec la sauvegarde des paramètres dans l'interface web, mais grâce à l'option --portable, un dossier **config** a été créé dans le dossier deemix-gui-pyweb et peut être édité.
 
-Par exemple, le dossier de téléchargement de la musque peut être changer à **/data/INTERNAL** pour qu'il corresponde au dossier musical de Volumio.
+L'interface web est alors accessible à l'adresse : **http://mon.ip.locale.de.volumio:6595**
+
+Il y a un bug avec la sauvegarde des paramètres dans l'interface web, mais grâce à l'option **\--portable**, un dossier **config** a été créé dans le dossier deemix-gui-pyweb et peut être édité. Par exemple, le dossier de téléchargement de la musque peut être changer, pour qu'il corresponde au dossier musical de Volumio : `"downloadLocation": "/data/INTERNAL/music"`
+
+L'option **\--serverwide-arl** permet de ne pas avoir à redonner votre ARL. Copier simplement l'ARL dans un fichier **config/.arl** 
+
+L'option **\--host 0.0.0.0** permet de se connecter au serveur depuis une autre machine.
